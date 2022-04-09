@@ -8,7 +8,7 @@ const heroesList = [
 
 const handler = test.each(heroesList);
 
-handler('should show health status for %s', (hero, expected) => {
-  const result = getHealthStatus(hero);
-  expect(result).toBe(expected);
+handler('should show health status for %O', (hero, expected) => {
+  const response = getHealthStatus(hero);
+  expect(response).toBe(expected);
 });

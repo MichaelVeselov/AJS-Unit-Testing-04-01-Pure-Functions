@@ -1,8 +1,10 @@
 export default function getHealthStatus(hero) {
-  if (hero.health > 50) {
+  const healthStatus = hero.health;
+
+  if (healthStatus > 50) {
     return 'healthy';
   }
-  if (hero.health < 15) {
+  if (healthStatus < 15) {
     return 'critycal';
   }
   return 'wounded';
