@@ -1,4 +1,4 @@
-import getHealthStatus from '../app.js';
+import getHealthStatus from '../gethealth.js';
 
 const heroesList = [
   [{ name: 'Mar', health: 90 }, 'healthy'],
